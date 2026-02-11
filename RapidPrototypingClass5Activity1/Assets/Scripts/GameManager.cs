@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI scoreText;
     [SerializeField] private TextMeshProUGUI healthText;
     [SerializeField] private Slider healthSlider;
-    //[SerializeField] private GameObject gameOverPanel;
+    [SerializeField] private GameObject losePanel; // Changed from gameOverPanel
 
     void Awake()
     {
@@ -38,10 +38,10 @@ public class GameManager : MonoBehaviour
         score = 0;
         UpdateUI();
 
-        //if (gameOverPanel != null)
-        //{
-        //    gameOverPanel.SetActive(false);
-        //}
+        if (losePanel != null)
+        {
+            losePanel.SetActive(false);
+        }
     }
 
     public void AddScore(int points)
@@ -58,7 +58,7 @@ public class GameManager : MonoBehaviour
 
         if (currentHealth <= 0)
         {
-            GameOver();
+            PlayerDied();
         }
     }
 
@@ -80,19 +80,14 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    void GameOver()
+    void PlayerDied()
     {
         Time.timeScale = 0f;
 
-        //if (gameOverPanel != null)
-        //{
-        //    gameOverPanel.SetActive(true);
-        //    TextMeshProUGUI finalScoreText = gameOverPanel.GetComponentInChildren<TextMeshProUGUI>();
-        //    if (finalScoreText != null)
-        //    {
-        //        finalScoreText.text = "Game Over!\nFinal Score: " + score;
-        //    }
-        //}
+        if (losePanel != null)
+        {
+            losePanel.SetActive(true);
+        }
     }
 
     public void RestartGame()

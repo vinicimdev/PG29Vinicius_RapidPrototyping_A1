@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4653734193156052489}
   - component: {fileID: 4495809233884384444}
-  - component: {fileID: 8367993246084406225}
   - component: {fileID: 1423375691569998686}
+  - component: {fileID: -1960007776318681481}
   m_Layer: 0
-  m_Name: Powerup
+  m_Name: Powerup_Bullets2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -92,21 +92,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8367993246084406225
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3766017667545420140}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5bb068edff4a2d64e8059cdc70b2684e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  powerupType: 0
-  fallSpeed: 3
-  lifetime: 8
 --- !u!61 &1423375691569998686
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -153,3 +138,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 3.47, y: 3.47}
   m_EdgeRadius: 0
+--- !u!114 &-1960007776318681481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3766017667545420140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a8e88e32c61b0644a59864ef6dcfe47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Powerup_Prototype2
+  powerupType: 0
+  fallSpeed: 3
+  lifetime: 8
