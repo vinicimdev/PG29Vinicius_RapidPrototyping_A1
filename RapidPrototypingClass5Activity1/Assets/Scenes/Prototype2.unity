@@ -400,21 +400,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8222059773338530654, guid: c6c6aaaf78a417a45b602e31dea56d40, type: 3}
-      propertyPath: m_text
-      value: 'PROTOTYPE 2
-
-
-'
-      objectReference: {fileID: 0}
     - target: {fileID: 8236058347209548252, guid: c6c6aaaf78a417a45b602e31dea56d40, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1101032861}
-    - target: {fileID: 8236058347209548252, guid: c6c6aaaf78a417a45b602e31dea56d40, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: RestartGame
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
